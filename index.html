@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="nav-brand">
+            <h1>Student Management</h1>
+        </div>
+        <nav class="nav-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Students</a>
+            <a href="#">About</a>
+            <div class="profile">
+                <span>V</span>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="card">
+            <div class="card-header">
+                <h2>Form Student</h2>
+                <p>Tambahkan data mahasiswa baru</p>
+            </div>
+            <form>
+                <div class="form-group">
+                    <label for="nim">NIM</label>
+                    <input type="text" id="nim" name="nim" placeholder="Masukkan NIM">
+                </div>
+                <div class="form-group">
+                    <label for="nama">Nama Lengkap</label>
+                    <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap">
+                </div>
+                <div class="form-group">
+                    <label for="jurusan">Jurusan</label>
+                    <select id="jurusan" name="jurusan">
+                        <option value="">Pilih jurusan</option>
+                        <option value="Teknik Informatika">Teknik Informatika</option>
+                        <option value="Sistem Informasi">Sistem Informasi</option>
+                        <option value="Teknik Elektro">Teknik Elektro</option>
+                        <option value="Teknik Industri">Teknik Industri</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Masukkan email">
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn btn-primary">Simpan</button>
+                    <button type="button" class="btn btn-secondary">Batal</button>
+                    <button type="reset" class="btn btn-danger">Reset</button>
+                </div>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="table-header">
+                <div class="card-header">
+                    <h2>Data Mahasiswa</h2>
+                    <p>Daftar mahasiswa yang terdaftar</p>
+                </div>
+                <div class="search-box">
+                    <input type="search" placeholder="Cari mahasiswa...">
+                    <button type="button" aria-label="Cari">🔍</button>
+                </div>
+            </div>
+
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>NIM</th>
+                            <th>Nama Lengkap</th>
+                            <th>Jurusan</th>
+                            <th>Email</th>
+                            <th>Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5025241001</td>
+                            <td>Andi Pratama</td>
+                            <td>Teknik Informatika</td>
+                            <td>andi@gmail.com</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="action edit" aria-label="Edit">✎</button>
+                                    <button type="button" class="action delete" aria-label="Delete">×</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>2</td>
+                            <td>5025241002</td>
+                            <td>Budi Santoso</td>
+                            <td>Sistem Informasi</td>
+                            <td>budi@gmail.com</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="action edit" aria-label="Edit">✎</button>
+                                    <button type="button" class="action delete" aria-label="Delete">×</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>3</td>
+                            <td>5025241003</td>
+                            <td>Citra Lestari</td>
+                            <td>Teknik Informatika</td>
+                            <td>citra@gmail.com</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="action edit" aria-label="Edit">✎</button>
+                                    <button type="button" class="action delete" aria-label="Delete">×</button>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>4</td>
+                            <td>5025241004</td>
+                            <td>Dimas Saputra</td>
+                            <td>Teknik Industri</td>
+                            <td>dimas@gmail.com</td>
+                            <td>
+                                <div class="actions">
+                                    <button type="button" class="action edit" aria-label="Edit">✎</button>
+                                    <button type="button" class="action delete" aria-label="Delete">×</button>
+                                </div>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination">
+                <button type="button" class="prev">‹</button>
+                <button type="button" class="active">1</button>
+                <button type="button">2</button>
+                <button type="button">3</button>
+                <button type="button" class="next">›</button>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>
